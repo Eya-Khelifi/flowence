@@ -13,8 +13,6 @@
 
 Most people use 3–5 different apps to manage their wellness — one for workouts, one for nutrition, one for motivation. **Flowence** brings everything together in one clean, beginner-friendly platform.
 
-Built as part of the Digital Marketing & Web Development module at **Esprit School of Business**, Tunis.
-
 ---
 
 ##  Features
