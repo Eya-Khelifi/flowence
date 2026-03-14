@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowence - Your Health Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo"><img src="logo.png" alt="Flowence"></div>
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#features">Meal Plans</a>
+                <a href="#community">Community</a>
+                <a href="#coaching">Coaching</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <a href="login.html" class="btn btn-login">Login</a>
+                <a href="signup.html" class="btn btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-image-wrapper">
+                <img src="daybyday.jpg" alt="Day by Day Graphic" class="hero-graphic">
+            </div>
+            <div class="hero-content">
+                <h1>Welcome to Flowence</h1>
+                <p>Your all-in-one platform for a healthier lifestyle. Calculate your BMR, get meal suggestions, and
+                    connect with a supportive community.</p>
+                <div class="buttons">
+                    <a href="#features" class="btn btn-outline">Learn More</a>
+                    <a href="signup.html" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="meal-plans" id="features">
+        <div class="container meal-plans-container">
+            <div class="meal-plans-text">
+                <h2>Recommended Meal Plans</h2>
+                <p>Tailored meal suggestions for your needs.</p>
+                <a href="signup.html" class="btn btn-primary">View Meal Plans</a>
+            </div>
+            <div class="meal-cards">
+                <div class="meal-cards-track">
+                    <div class="card meal-card">
+                        <div class="card-image">
+                            <img src="assets/meal_salad.png" alt="Green Detox Salad">
+                            <span class="badge">Vegan</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>Green Detox Salad</h3>
+                            <p class="calories">250 calories</p>
+                        </div>
+                    </div>
+                    <div class="card meal-card">
+                        <div class="card-image">
+                            <img src="assets/meal_berry.png" alt="Berry Protein Boost">
+                            <span class="badge">High Protein</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>Berry Protein Boost</h3>
+                            <p class="calories">300 calories</p>
+                        </div>
+                    </div>
+                    <div class="card meal-card">
+                        <div class="card-image">
+                            <img src="quinoi salad.jpg" alt="Quinoa Power Bowl">
+                            <span class="badge">High Protein</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>Quinoa Power Bowl</h3>
+                            <p class="calories">320 calories</p>
+                        </div>
+                    </div>
+                    <div class="card meal-card">
+                        <div class="card-image">
+                            <img src="salmon.jpg" alt="Grilled Salmon">
+                            <span class="badge">High Protein</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>Grilled Salmon</h3>
+                            <p class="calories">280 calories</p>
+                        </div>
+                    </div>
+                    <div class="card meal-card">
+                        <div class="card-image">
+                            <img src="oats.jpg" alt="Overnight Oats">
+                            <span class="badge">Vegan</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>Overnight Oats</h3>
+                            <p class="calories">270 calories</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="community" id="community">
+        <div class="container community-container">
+            <div class="community-content-layout">
+                <div class="community-description">
+                    <h2>Inspiration from Our Community</h2>
+                    <div class="description-container">
+                        <p>Check out the latest motivational posts from our users. Get inspired by real stories, meal
+                            prep ideas, and fitness journeys shared by our vibrant community. Join thousands of members
+                            who are transforming their health and wellness one post at a time.</p>
+                    </div>
+                </div>
+                <div class="posts-carousel">
+                    <button class="carousel-btn carousel-prev" aria-label="Previous">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="post-card-container">
+                        <div class="post-card-small" id="current-post-card">
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-next" aria-label="Next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback" id="coaching">
+        <div class="container feedback-container">
+            <div class="feedback-content-layout">
+                <div class="feedback-description">
+                    <h2>What Our Users Say</h2>
+                    <div class="description-container">
+                        <p>Real feedback from our community members. Discover how Flowence has helped thousands of users
+                            achieve their health and fitness goals. Read authentic testimonials from people who have
+                            transformed their lives through our platform.</p>
+                    </div>
+                </div>
+                <div class="reviews-carousel">
+                    <button class="carousel-btn carousel-prev" aria-label="Previous">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="review-card-container">
+                        <div class="review-card" id="current-review-card">
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-next" aria-label="Next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-container">
+            <div class="social-links">
+                <a href="https://www.facebook.com/FlawenceReachYourPeak" target="_blank" aria-label="Facebook"
+                    class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/accounts/login/?next=%2Fpeakwithflowence%2F&source=omni_redirect"
+                    target="_blank" aria-label="Instagram" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+                        <path
+                            d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" />
+                        <path
+                            d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z" />
+                        <path d="M17.5078 6.5L17.4988 6.5" />
+                    </svg>
+                </a>
+                <a href="https://x.com/FlowencePeak" target="_blank" aria-label="X" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M3 21L10.5484 13.4516M21 3L13.4516 10.5484M13.4516 10.5484L8 3H3L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2024 Flowence. All rights reserved.</p>
+            </div>
+
+            <div class="footer-contact">
+                <a href="#">Contact Us</a>
+                <a href="https://flowence.taplink.ws" target="_blank" rel="noopener noreferrer">Follow Us on Social
+                    Media</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

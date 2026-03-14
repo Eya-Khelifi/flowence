@@ -1,0 +1,125 @@
+
+
+.recommendation-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(46, 74, 51, 0.05);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.recommendation-section h3 {
+    font-size: 17.6px;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.recommendation-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.recommendation-value.highlight {
+    font-size: 40px;
+    color: var(--dark-green);
+}
+
+.recommendation-desc {
+    font-size: 14.4px;
+    color: #666;
+    margin: 0;
+}
+
+.macros-section {
+    margin: 40px 0;
+}
+
+.macros-section h3 {
+    font-size: 20.8px;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.macros-grid-recommendations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.macro-card {
+    background-color: var(--light-cream);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    border: 2px solid var(--primary-green);
+}
+
+.macro-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.macro-label {
+    font-size: 14.4px;
+    color: #666;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.macro-amount {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 5px;
+}
+
+.macro-calories {
+    font-size: 13.6px;
+    color: #888;
+}
+
+.recommendation-actions {
+    margin-top: 30px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .macros-grid-recommendations {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .recommendation-section {
+        padding: 20px 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .macros-grid-recommendations {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .recommendation-value {
+        font-size: 24px;
+    }
+
+    .recommendation-value.highlight {
+        font-size: 32px;
+    }
+
+    .recommendation-section {
+        padding: 15px;
+    }
+
+    .macro-card {
+        padding: 15px;
+    }
+}

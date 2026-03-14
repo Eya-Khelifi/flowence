@@ -1,0 +1,334 @@
+
+
+.recipe-categories {
+    padding: 20px 60px;
+    margin-bottom: 60px;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.category-card-small {
+    background-color: var(--light-cream);
+    border-radius: var(--border-radius);
+    padding: 30px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.category-card-small:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(46, 74, 51, 0.1);
+    border-radius: 50%;
+    border: 2px solid rgba(46, 74, 51, 0.3);
+}
+
+.category-icon svg {
+    stroke: var(--primary-green);
+}
+
+.category-card-small h3 {
+    font-size: 17.6px;
+    color: var(--primary-green);
+    margin: 0;
+}
+
+.batch-cooking {
+    padding: 0 60px 60px;
+    text-align: center;
+}
+
+.batch-grid-featured {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.batch-card {
+    width: 150px;
+    height: 150px;
+    min-width: 150px;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--primary-green);
+    overflow: hidden;
+    transition: filter 0.3s ease;
+    display: block;
+}
+
+.batch-card-filled {
+    cursor: pointer;
+}
+
+.batch-card-filled:hover {
+    opacity: 0.8;
+}
+
+.batch-card-empty {
+    background-color: var(--light-cream);
+    border-style: dashed;
+    border-color: #ccc;
+    cursor: default;
+}
+
+.batch-card-link {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+.batch-image {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+}
+
+.batch-image-empty {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+
+@media (max-width: 1024px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .recipe-categories,
+    .batch-cooking {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.batch-recipe-card {
+    background-color: var(--light-cream);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+    min-width: 0;
+    width: 100%;
+}
+
+.batch-recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.batch-recipe-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+
+.batch-recipe-info {
+    padding: 20px;
+}
+
+.batch-recipe-info h3 {
+    font-size: 18px;
+    color: var(--primary-green);
+    margin-bottom: 8px;
+}
+
+
+.weekly-plan-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    
+    
+    width: fit-content;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-green) rgba(0, 0, 0, 0.05);
+}
+
+.weekly-card {
+    flex: 0 0 130px;
+    
+    min-width: 130px;
+    
+    background-color: var(--light-cream);
+    border-radius: var(--border-radius);
+    min-height: 130px;
+    
+    height: 130px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    justify-content: center;
+    
+}
+
+
+.weekly-card.empty {
+    border: 2px dashed #ccc;
+    background-color: var(--light-cream);
+    justify-content: center;
+    color: #888;
+}
+
+.weekly-card.empty:hover {
+    border-color: var(--primary-green);
+    color: var(--primary-green);
+    background-color: var(--light-cream);
+    opacity: 1;
+    
+}
+
+.weekly-card.filled {
+    border: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    
+    background-color: #fff;
+    padding: 0;
+    overflow: hidden;
+    cursor: default;
+    
+    
+    cursor: pointer;
+    justify-content: flex-start;
+    
+}
+
+.weekly-card.filled:hover {
+    
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.day-label {
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 0px;
+    
+    font-size: 13px;
+    
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.weekly-card.filled .day-label {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--primary-green);
+    padding: 2px 6px;
+    border-radius: 4px;
+    
+    z-index: 2;
+    margin: 0;
+    font-size: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+}
+
+
+.filled-card-image {
+    width: 100%;
+    height: 85px;
+    
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.filled-card-title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    
+    padding: 6px 4px;
+    color: #2c3e50;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.remove-recipe-btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.remove-recipe-btn i {
+    color: #e74c3c;
+    font-size: 10px;
+    
+}

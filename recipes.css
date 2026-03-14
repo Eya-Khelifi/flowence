@@ -1,0 +1,132 @@
+
+
+.recipes-listing-section {
+    padding: 0 60px 60px;
+}
+
+.recipes-listing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.recipe-card {
+    background-color: var(--light-cream);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-img {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+
+.recipe-info {
+    padding: 20px;
+}
+
+.recipe-info h3 {
+    font-size: 20.8px;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.recipe-info p {
+    font-size: 14.4px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.batch-recipe-card {
+    background-color: var(--light-cream);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.batch-recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.batch-recipe-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+
+.batch-recipe-info {
+    padding: 20px;
+}
+
+.batch-recipe-info h3 {
+    font-size: 20.8px;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.batch-recipe-info p {
+    font-size: 14.4px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .recipes-listing-section {
+        padding: 0 40px 40px;
+    }
+
+    .recipes-listing-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .recipes-listing-section {
+        padding: 0 20px 40px;
+    }
+
+    .recipes-listing-grid,
+    .batch-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+.batch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}

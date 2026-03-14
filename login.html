@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowence - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="auth-body">
+    <nav class="auth-nav">
+        <a href="index.html" class="logo"><img src="logo dark.png" alt="Flowence"></a>
+    </nav>
+
+    <div class="auth-container signup-container">
+        <div class="signup-image-wrapper">
+            <div class="signup-image-cropped"
+                style="background-image: url('sign.jpg'); background-size: cover; background-position: center; width: 100%; height: 100%; min-height: 500px; border-radius: 20px; overflow: hidden;">
+            </div>
+        </div>
+        <div class="auth-card signup-form-card">
+            <div class="auth-header">
+                <h2>Login</h2>
+                <p>Welcome back! Please login to your account</p>
+            </div>
+
+            <form id="simple-login-form" class="auth-form">
+                <div class="form-group">
+                    <input type="text" id="email" placeholder="Email" required>
+                    <small class="error-message" id="email-error"></small>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <small class="error-message" id="password-error"></small>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+
+                <p style="text-align: center; margin-top: 20px; font-size: 0.9rem; color: #666;">
+                    Don't have an account? <a href="signup.html"
+                        style="color: var(--primary-green); font-weight: 600;">Sign Up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

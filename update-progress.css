@@ -1,0 +1,191 @@
+
+
+.progress-update-section {
+    padding: 0 60px 60px;
+}
+
+.progress-form-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.progress-form-container form {
+    background-color: var(--light-cream);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 13.6px;
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--light-cream);
+}
+
+.form-group input::placeholder {
+    color: #999;
+    font-size: 13.6px;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 8px;
+    color: #666;
+    font-size: 13.6px;
+}
+
+.quick-buttons-water {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quick-buttons-water .btn {
+    flex: 1;
+    padding: 10px;
+    font-size: 14.4px;
+    background-color: var(--light-cream);
+    border: 2px solid var(--primary-green);
+    color: var(--primary-green);
+}
+
+.quick-buttons-water .btn:hover {
+    background-color: var(--dark-green);
+    color: var(--light-cream);
+    border-color: var(--dark-green);
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.form-actions .btn {
+    flex: 1;
+    text-align: center;
+}
+
+.btn-clear-input {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.2s;
+    font-size: 13.6px;
+    float: right;
+}
+
+.btn-clear-input:hover {
+    background-color: var(--light-cream);
+    color: #666;
+}
+
+.current-stats {
+    background-color: var(--light-cream);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+.current-stats h3 {
+    color: var(--primary-green);
+    margin-bottom: 15px;
+    font-size: 19.2px;
+}
+
+.stats-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.stat-preview-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    background-color: rgba(46, 74, 51, 0.05);
+    border-radius: 8px;
+}
+
+.stat-preview-item .stat-label {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.stat-preview-item .stat-value {
+    font-weight: 700;
+    color: var(--primary-green);
+    font-size: 16px;
+}
+
+
+.stat-preview-item .stat-value.empty-state {
+    color: #999;
+    font-weight: 400;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .progress-update-section {
+        padding: 0 40px 40px;
+    }
+
+    .progress-form-container {
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .progress-form-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .progress-update-section {
+        padding: 0 20px 40px;
+    }
+
+    .progress-form-container form {
+        padding: 30px 20px;
+    }
+
+    .current-stats {
+        padding: 20px;
+    }
+}

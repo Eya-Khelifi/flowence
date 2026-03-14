@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowence - Your Daily Intake Recommendations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="recommendations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="auth-body">
+    <nav class="auth-nav">
+        <a href="index.html" class="logo"><img src="logo dark.png" alt="Flowence"></a>
+    </nav>
+
+    <div class="auth-container">
+        <div class="auth-card" style="max-width: 700px;">
+            <div class="auth-header">
+                <h2>Your Daily Intake Recommendations</h2>
+                <p>Based on your profile and goals</p>
+            </div>
+
+            <div id="recommendations-content">
+                <div class="recommendation-section">
+                    <h3>Basal Metabolic Rate (BMR)</h3>
+                    <div class="recommendation-value" id="bmr-value">-</div>
+                    <p class="recommendation-desc">Your body's calorie needs at rest</p>
+                </div>
+
+                <div class="recommendation-section">
+                    <h3>Total Daily Energy Expenditure (TDEE)</h3>
+                    <div class="recommendation-value" id="tdee-value">-</div>
+                    <p class="recommendation-desc">Your total daily calorie needs based on activity level</p>
+                </div>
+
+                <div class="recommendation-section">
+                    <h3>Recommended Daily Calories</h3>
+                    <div class="recommendation-value highlight" id="calories-value">-</div>
+                    <p class="recommendation-desc" id="goal-desc">-</p>
+                </div>
+
+                <div class="macros-section">
+                    <h3>Recommended Macronutrients</h3>
+                    <div class="macros-grid-recommendations">
+                        <div class="macro-card">
+                            <div class="macro-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    width="24" height="24" color="#000000" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path
+                                        d="M17 16C19.7614 16 22 13.7614 22 11C22 9.87418 21.6279 8.83526 21 7.99951C18.8745 5.17054 16 4 12 4C8 4 2 6.86508 2 10.5C2 11.8807 3.11929 13 4.5 13H8C9.32374 12.9675 12 13.5 14.2356 15.167C15.0274 15.6933 15.9779 16 17 16Z" />
+                                    <path
+                                        d="M2 10.5V11C2 13.8284 2 15.2426 2.87868 16.1213C3.75736 17 5.17157 17 8 17C9.32374 16.9675 12 17.5 14.2356 19.167C15.0274 19.6933 15.9779 20 17 20C19.7614 20 22 17.7614 22 15V11" />
+                                    <path
+                                        d="M18.5 11C18.5 11.8284 17.8284 12.5 17 12.5C16.1716 12.5 15.5 11.8284 15.5 11C15.5 10.1716 16.1716 9.5 17 9.5C17.8284 9.5 18.5 10.1716 18.5 11Z" />
+                                </svg></div>
+                            <div class="macro-label">Protein</div>
+                            <div class="macro-amount" id="protein-amount">-</div>
+                            <div class="macro-calories" id="protein-calories">-</div>
+                        </div>
+                        <div class="macro-card">
+                            <div class="macro-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    width="24" height="24" color="#000000" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M3.19405 14.077C1.94563 15.3082 1.84437 17.6176 2.13655 19.7508C2.40166 21.6864 4.57937 22.5986 6.21199 21.5763C9.1986 19.7061 12.3179 17.2421 15.3067 14.2947C18.3772 11.2666 20.0596 8.96143 21.5435 6.36753C22.4433 4.79463 22.0218 2.69734 20.1997 2.23223C18.2048 1.72304 15.6191 1.93195 13.3375 4.0775M3.19405 14.077C2.36031 10.337 5.29027 5.93188 12.1656 9.7943M3.19405 14.077C3.81736 14.0897 5.21758 14.3717 6.5544 15.3245M6.84592 8.19547C6.90898 6.25487 8.82259 3.00486 13.3375 4.0775M13.3375 4.0775C14.304 4.30712 15.3897 4.73482 16.602 5.41585" />
+                                </svg></div>
+                            <div class="macro-label">Carbs</div>
+                            <div class="macro-amount" id="carbs-amount">-</div>
+                            <div class="macro-calories" id="carbs-calories">-</div>
+                        </div>
+                        <div class="macro-card">
+                            <div class="macro-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    width="24" height="24" color="#000000" fill="none" stroke="#141B34"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M10 9.25524C7.60631 7.95835 5.08056 5.71428 3 2M11.6155 4.41901C9.5805 3.0835 7.09742 3.64165 6.06938 5.66567C5.04134 7.68969 5.85764 10.4131 7.89263 11.7486C9.73497 12.9577 13.7672 14.2079 17 10.745C13.9706 9.45488 13.6505 5.75451 11.6155 4.41901Z" />
+                                    <path
+                                        d="M4 11C3.36093 11.4709 3 12.0054 3 12.572C3 14.4652 7.02944 16 12 16C16.9706 16 21 14.4652 21 12.572C21 12.0054 20.6391 11.4709 20 11" />
+                                    <path
+                                        d="M21 13C21 16.5766 18.4936 19.7147 15.7951 21.4822C15.2402 21.8457 14.5804 22 13.9171 22H10.0829C9.41959 22 8.75976 21.8457 8.20486 21.4822C5.5064 19.7147 3 16.5766 3 13" />
+                                </svg></div>
+                            <div class="macro-label">Fats</div>
+                            <div class="macro-amount" id="fats-amount">-</div>
+                            <div class="macro-calories" id="fats-calories">-</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recommendation-actions">
+                    <a href="dashboard.html" class="btn btn-primary btn-block">Go to Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="common.js"></script>
+    <script src="recommendations.js"></script>
+</body>
+
+</html>
